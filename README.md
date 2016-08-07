@@ -9,6 +9,7 @@
 * [Platforms] (#platforms)
 * [Project] (#project)
 * [Updates] (#updates)
+* [License] (#license)
 
 ##Objective
 
@@ -40,6 +41,8 @@ git clone --mirror https://github.com/msk610/Chemtris.git
 The Android Launcher Icon was just updated for the project. <br/>
 ![Chemtris Android Icon](https://github.com/msk610/Chemtris/blob/master/android/res/drawable-xxhdpi/ic_launcher.png "Chemtris Android Icon")
 
+##License
+[MIT License](https://github.com/msk610/Chemtris/blob/master/License.txt)
 
 ##Enjoy the game
 ![Chemtris Game Over Screen](http://imgur.com/L0SmOmF.png "Chemtris Game Over Screen")
