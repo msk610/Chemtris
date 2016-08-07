@@ -18,9 +18,9 @@ The objective of this game is to teach basic concepts of Chemistry, primarily Or
 
 ##Platforms
 
-* [Android] (https://drive.google.com/open?id=0B_0yAxI3DOXmLVlpRzZkazk5dWM)
+* [Android] (https://drive.google.com/open?id=0B_0yAxI3DOXma3IzVkN6TjEyVFE)
 ![Chemtris gameplay on Android](http://imgur.com/wCyRPm5.png "Gameplay on Android")
-* [Desktop with JAVA installed] (https://drive.google.com/open?id=0B_0yAxI3DOXmVzVYSVZNdE04UnM)
+* [Desktop with JAVA installed] (https://drive.google.com/open?id=0B_0yAxI3DOXmS1gzT05aa2tNUGs)
 ![Chemtris gameplay on Desktop](http://imgur.com/C4nBQCE.png "Gameplay on Desktop")
 
 
