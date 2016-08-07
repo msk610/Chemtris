@@ -107,7 +107,7 @@ public class Oxygen extends Element {
 
         for(int i = 0; i < shadow.materials.size; ++i){
             shadow.materials.get(i).set(ColorAttribute.createDiffuse(105/255f,105/255f,105/255f,1f));
-            frame.materials.get(i).set(ColorAttribute.createDiffuse(184/255f,182/255f,182/255f,1f));
+            frame.materials.get(i).set(ColorAttribute.createDiffuse(Color.WHITE));
         }
     }
 }

@@ -112,6 +112,9 @@ public class Spawner {
             done = false;
             finished_spawning = true;
             time_elasped = 0f;
+            r = 70/255f;
+            g = 70/255f;
+            b = 70/255f;
 
             //when animation is done return the piece
             return current;
