@@ -33,7 +33,7 @@ git clone --mirror https://github.com/msk610/Chemtris.git
 ```
 clone project (bare):
 ```
-git clone --mirror https://github.com/msk610/Chemtris.git
+git clone --bare https://github.com/msk610/Chemtris.git
 ```
 
 ##Updates
