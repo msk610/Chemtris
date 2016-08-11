@@ -15,6 +15,8 @@ import com.badlogic.gdx.utils.Array;
 import com.bms.chemtris.models.GameModel;
 import com.bms.chemtris.render.WireframeShader;
 
+import java.util.Random;
+
 /**
  * Class to store game pieces.
  */
@@ -35,6 +37,7 @@ public class Storage {
     public Array<ModelInstance> level_5_w;
 
     private static Environment environment; //rendering environment
+    public int cc_type;
 
     private int frame;
 
@@ -48,17 +51,19 @@ public class Storage {
     });
 
     //colors
-    private static Color dark = new Color(71/255f,10/255f,0f,1f);
-    private static Color lDark = new Color(122/255f,18/255f,0f,1f);
-    private static Color medium = new Color(161/255f,24/255f,0f,1f);
-    private static Color normal = new Color(200/255f,29/255f,0f,1f);
-    private static Color light = new Color(239/255f,35/255f,0f,1f);
+    private Color dark = new Color(255/255f,8/255f,0f,1f);
+    private Color lDark = new Color(255/255f,69/255f,0f,1f);
+    private Color medium = new Color(255/255f,127/255f,0f,1f);
+    private Color normal = new Color(255/255f,155/255f,0f,1f);
+    private Color light = new Color(255/255f,204/255f,0f,1f);
 
     //perspective camera
     private PerspectiveCamera camera;
 
     //collision matrix
     private static boolean [][][] matrix;
+
+    private static final Random rand = new Random();
 
 
     //constructor
@@ -82,6 +87,29 @@ public class Storage {
         environment = new Environment();
         environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.4f, 0.4f, 0.4f, 1f));
         environment.add(new DirectionalLight().set(0.8f, 0.8f, 0.8f, -1f, -0.8f, -0.2f));
+
+        cc_type = rand.nextInt(3);
+
+        if(cc_type == 0){
+            dark = new Color(255/255f,8/255f,0f,1f);
+            lDark = new Color(255/255f,69/255f,0f,1f);
+            medium = new Color(255/255f,127/255f,0f,1f);
+            normal = new Color(255/255f,155/255f,0f,1f);
+            light = new Color(255/255f,204/255f,0f,1f);
+        }
+        else if(cc_type == 1){
+            dark = new Color(93/255f,78/255f,1f,1f);
+            lDark = new Color(82/255f,164/255f,1f,1f);
+            medium = new Color(0/255f,249/255f,1f,1f);
+            normal = new Color(80/255f,255/255f,127/255f,1f);
+            light = new Color(68/255f,255/255f,50/255f,1f);
+        }else{
+            dark = new Color(255/255f,245/255f,149/255f,1f);
+            lDark = new Color(255/255f,234/255f,110/255f,1f);
+            medium = new Color(255/255f,218/255f,130/255f,1f);
+            normal = new Color(255/255f,140/255f,140/255f,1f);
+            light = new Color(234/255f,107/255f,107/255f,1f);
+        }
     }
 
     public boolean add(GameModel model){

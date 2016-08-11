@@ -111,7 +111,15 @@ public class LevelTwo implements Screen {
 
         //make stages
         stage = new Stage();
-        particler = new ParticleRender(ParticleRender.red,stage);
+        int c;
+        if(storage.cc_type == 0){
+            c = ParticleRender.red;
+        }else if(storage.cc_type == 1){
+            c = ParticleRender.blue;
+        }else{
+            c = ParticleRender.yellow;
+        }
+        particler = new ParticleRender(c,stage);
         tutorialStage = new Stage();
 
         //make UI
