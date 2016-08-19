@@ -82,7 +82,7 @@ public class Storage {
         level_2_w =  new Array<ModelInstance>();
         level_3_w =  new Array<ModelInstance>();
         level_4_w =  new Array<ModelInstance>();
-        level_5_w =  new Array<ModelInstance>();
+         level_5_w =  new Array<ModelInstance>();
 
         environment = new Environment();
         environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.4f, 0.4f, 0.4f, 1f));
