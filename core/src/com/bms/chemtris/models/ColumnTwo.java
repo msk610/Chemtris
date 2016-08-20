@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.PerspectiveCamera;
 import com.badlogic.gdx.graphics.g3d.ModelInstance;
 
 /**
- * Created by mdkabir on 7/30/16.
+ * Class to maintain the 2x1 column.
  */
 public class ColumnTwo extends GameModel {
     private enum X{
