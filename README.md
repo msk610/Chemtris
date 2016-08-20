@@ -19,9 +19,9 @@ The objective of this game is to teach basic concepts of Chemistry, primarily Or
 
 ##Platforms
 
-* [Android] (https://drive.google.com/open?id=0B_0yAxI3DOXma3IzVkN6TjEyVFE)
+* [Android] (https://drive.google.com/open?id=0B_0yAxI3DOXmbzk5WjA0ekFsMlk)
 ![Chemtris gameplay on Android](http://imgur.com/wCyRPm5.png "Gameplay on Android")
-* [Desktop with JAVA installed] (https://drive.google.com/open?id=0B_0yAxI3DOXmS1gzT05aa2tNUGs)
+* [Desktop with JAVA installed] (https://drive.google.com/open?id=0B_0yAxI3DOXmbGw0QTlvNDcxT2s)
 ![Chemtris gameplay on Desktop](http://imgur.com/C4nBQCE.png "Gameplay on Desktop")
 
 
@@ -38,8 +38,12 @@ git clone --bare https://github.com/msk610/Chemtris.git
 
 ##Updates
 
-The Android Launcher Icon was just updated for the project. <br/>
-![Chemtris Android Icon](https://github.com/msk610/Chemtris/blob/master/android/res/drawable-xxhdpi/ic_launcher.png "Chemtris Android Icon")
+* The Android Icon was updated once again and the bugs in the chemistry level rotation bug was fixed along with the 2x1 column rotation was fixed <br/>
+![Chemtris New Android Icon](http://i.imgur.com/jb6lLet.png "Chemtris New Android Icon")
+
+
+* The Android Launcher Icon was just updated for the project. <br/>
+![Chemtris Android Icon](http://i.imgur.com/aVWB2UD.png "Chemtris Android Icon")
 
 ##License
 [MIT License](https://github.com/msk610/Chemtris/blob/master/License.txt)
