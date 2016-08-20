@@ -434,11 +434,14 @@ public class MethaneLevel implements Screen {
                 int c_stat = controller.run(delta,current);
                 switch (c_stat) {
                     case Controller.DONE:
-                        if(spawner.current == WaterSpawner.C){
-                            storage.add_carbon(current);
-                        }
-                        else{
-                            storage.add_methane_h(current);
+                        try {
+                            if (spawner.current == WaterSpawner.C) {
+                                storage.add_carbon(current);
+                            } else {
+                                storage.add_methane_h(current);
+                            }
+                        }catch (Exception e){
+                            gameState = GameState.LOSE;
                         }
 
                         boolean over = storage.over;
@@ -451,10 +454,14 @@ public class MethaneLevel implements Screen {
                         }
                         break;
                 }
-                current.renderParts();
-                current.renderShadow();
-                current.traceFrame();
-                current.renderShadow();
+                try {
+                    current.renderParts();
+                    current.renderShadow();
+                    current.traceFrame();
+                    current.renderShadow();
+                }catch (Exception e){
+                    gameState = GameState.LOSE;
+                }
                 break;
         }
 

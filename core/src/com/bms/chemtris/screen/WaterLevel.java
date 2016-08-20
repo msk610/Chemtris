@@ -436,11 +436,14 @@ public class WaterLevel implements Screen {
 
                 switch (c_stat) {
                     case Controller.DONE:
-                        if(spawner.current == WaterSpawner.H){
-                            storage.add_hydrogen(current);
-                        }
-                        else{
-                            storage.add_oxygen(current);
+                        try {
+                            if (spawner.current == WaterSpawner.H) {
+                                storage.add_hydrogen(current);
+                            } else {
+                                storage.add_oxygen(current);
+                            }
+                        }catch (Exception e){
+                            gameState = GameState.LOSE;
                         }
 
                         boolean over = storage.over;
@@ -454,10 +457,14 @@ public class WaterLevel implements Screen {
                         break;
                 }
 
-                current.renderParts();
-                current.renderShadow();
-                current.traceFrame();
-                current.renderShadow();
+                try {
+                    current.renderParts();
+                    current.renderShadow();
+                    current.traceFrame();
+                    current.renderShadow();
+                }catch (Exception e){
+                    gameState = GameState.LOSE;
+                }
                 break;
         }
     }
