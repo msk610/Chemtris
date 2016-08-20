@@ -44,7 +44,7 @@ public class ColumnTwo extends GameModel {
                     case FRONT:
                         if(canMovePart(1,0,0) && canMovePart(2,0,0)){
                             movePart(1,1f,0f,0f);
-                            movePart(2,1f,0f,0f);
+                            movePart(2,2f,0f,0f);
                             x = X.SIDE;
                         }
                         break;
