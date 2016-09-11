@@ -98,17 +98,17 @@ public class Storage {
             light = new Color(255/255f,204/255f,0f,1f);
         }
         else if(cc_type == 1){
-            dark = new Color(93/255f,78/255f,1f,1f);
-            lDark = new Color(82/255f,164/255f,1f,1f);
-            medium = new Color(0/255f,249/255f,1f,1f);
-            normal = new Color(80/255f,255/255f,127/255f,1f);
-            light = new Color(68/255f,255/255f,50/255f,1f);
+            dark = new Color(115/255f,158/255f,225/255f,1f);
+            lDark = new Color(138/255f,146/255f,236/255f,1f);
+            medium = new Color(150/255f,140/255f,241/255f,1f);
+            normal = new Color(161/255f,134/255f,247/255f,1f);
+            light = new Color(173/255f,128/255f,252/255f,1f);
         }else{
-            dark = new Color(255/255f,245/255f,149/255f,1f);
-            lDark = new Color(255/255f,234/255f,110/255f,1f);
-            medium = new Color(255/255f,218/255f,130/255f,1f);
-            normal = new Color(255/255f,140/255f,140/255f,1f);
-            light = new Color(234/255f,107/255f,107/255f,1f);
+            dark = new Color(224/255f,240/255f,53/255f,1f);
+            lDark = new Color(199/255f,240/255f,64/255f,1f);
+            medium = new Color(175/255f,240/255f,76/255f,1f);
+            normal = new Color(114/255f,240/255f,105/255f,1f);
+            light = new Color(53/255f,240/255f,134/255f,1f);
         }
     }
 
