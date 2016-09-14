@@ -52,37 +52,37 @@ public class ParticleRender {
         if(ctr == 0){
             stage.addActor(particle);
         }
-        if(ctr == 2){
+        if(ctr == 4){
             Texture p = new Texture(color_path+"1.png");
             p.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             particle.setDrawable(new SpriteDrawable(new Sprite(p)));
         }
-        if(ctr == 4){
+        if(ctr == 8){
             Texture p = new Texture(color_path+"2.png");
             p.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             particle.setDrawable(new SpriteDrawable(new Sprite(p)));
         }
-        if(ctr == 6){
+        if(ctr == 12){
             Texture p = new Texture(color_path+"3.png");
             p.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             particle.setDrawable(new SpriteDrawable(new Sprite(p)));
         }
-        if(ctr == 8){
+        if(ctr == 16){
             Texture p = new Texture(color_path+"4.png");
             p.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             particle.setDrawable(new SpriteDrawable(new Sprite(p)));
         }
-        if(ctr == 10){
+        if(ctr == 20){
             Texture p = new Texture(color_path+"5.png");
             p.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             particle.setDrawable(new SpriteDrawable(new Sprite(p)));
         }
-        if(ctr == 12){
+        if(ctr == 24){
             Texture p = new Texture(color_path+"6.png");
             p.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
             particle.setDrawable(new SpriteDrawable(new Sprite(p)));
         }
-        if(ctr == 14){
+        if(ctr == 28){
             isFinished = true;
             particle.remove();
             ctr = 0;
