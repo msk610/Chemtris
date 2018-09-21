@@ -6,10 +6,10 @@
 
 ## Table of Contents
 * [Objective](#objective)
-* [Platforms] (#platforms)
-* [Project] (#project)
-* [Updates] (#updates)
-* [License] (#license)
+* [Platforms](#platforms)
+* [Project](#project)
+* [Updates](#updates)
+* [License](#license)
 
 ## Objective
 
